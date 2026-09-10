@@ -62,12 +62,23 @@ The Smart Glove is embedded with temperature and humidity sensors that continuou
 │   ├── analysis_shap_lime.py    # SHAP/LIME explainable AI analysis
 │   ├── requirements.txt         # Python dependencies
 │   └── .env.example             # Copy to .env and add your credentials
+├── hardware/
+│   └── cad/
+│       ├── PCM_GLOVE.stl        # 3D model — glove with PCM coolant layout
+│       └── cooling_chamber.stl  # 3D model — standalone PCM cooling chamber
 ├── docs/
 │   ├── Capstone_Report.pdf      # Full project report
-│   └── images/                  # Figures: CAD models, hardware, dashboard, results
+│   └── images/                  # Figures: CAD renders, hardware, dashboard, results
 ├── .gitignore
 └── README.md
 ```
+
+## 🧩 Hardware / CAD Files
+The actual 3D-printable/editable CAD models are available in [`hardware/cad/`](hardware/cad/):
+- [`PCM_GLOVE.stl`](hardware/cad/PCM_GLOVE.stl) — glove body with PCM coolant pouch layout across the palm and fingers
+- [`cooling_chamber.stl`](hardware/cad/cooling_chamber.stl) — standalone PCM cooling/drying chamber for post-use glove sanitation
+
+These are STL files and can be opened in any free STL viewer (e.g. [viewstl.com](https://www.viewstl.com), Windows 3D Viewer, Blender, or any slicer software like Cura/PrusaSlicer) or directly on GitHub, which renders `.stl` files in-browser when you click on them.
 
 ## 🔮 Planned Additions
 - Migration to **HiveMQ + TimescaleDB** for the cloud/data layer
