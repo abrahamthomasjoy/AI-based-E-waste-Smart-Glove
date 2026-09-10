@@ -1,0 +1,8 @@
+requests
+pandas
+numpy
+scikit-learn
+shap
+lime
+matplotlib
+python-dotenv
